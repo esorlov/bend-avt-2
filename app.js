@@ -9,7 +9,7 @@ const port = 1000 + uid;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello UID=', uid);
+  res.end('Hello User!');
 });
 
 server.listen(port, hostname, () => {
